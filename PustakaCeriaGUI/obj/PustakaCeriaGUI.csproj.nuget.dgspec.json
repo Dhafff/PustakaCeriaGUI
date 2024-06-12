@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dhafg\\source\\repos\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj": {}
+    "C:\\Users\\avisenna\\OneDrive - Telkom University\\SEMESTER 6\\KPL\\GUI_KPL\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dhafg\\source\\repos\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj": {
+    "C:\\Users\\avisenna\\OneDrive - Telkom University\\SEMESTER 6\\KPL\\GUI_KPL\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dhafg\\source\\repos\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj",
+        "projectUniqueName": "C:\\Users\\avisenna\\OneDrive - Telkom University\\SEMESTER 6\\KPL\\GUI_KPL\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj",
         "projectName": "PustakaCeriaGUI",
-        "projectPath": "C:\\Users\\dhafg\\source\\repos\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj",
-        "packagesPath": "C:\\Users\\dhafg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dhafg\\source\\repos\\PustakaCeriaGUI\\PustakaCeriaGUI\\obj\\",
+        "projectPath": "C:\\Users\\avisenna\\OneDrive - Telkom University\\SEMESTER 6\\KPL\\GUI_KPL\\PustakaCeriaGUI\\PustakaCeriaGUI\\PustakaCeriaGUI.csproj",
+        "packagesPath": "C:\\Users\\avisenna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\avisenna\\OneDrive - Telkom University\\SEMESTER 6\\KPL\\GUI_KPL\\PustakaCeriaGUI\\PustakaCeriaGUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dhafg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\avisenna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
