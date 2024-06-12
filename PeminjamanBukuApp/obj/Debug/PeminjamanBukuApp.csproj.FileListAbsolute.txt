@@ -1,0 +1,10 @@
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\bin\Debug\PeminjamanBukuApp.exe.config
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\bin\Debug\PeminjamanBukuApp.exe
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\bin\Debug\PeminjamanBukuApp.pdb
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\obj\Debug\PeminjamanBukuApp.csproj.AssemblyReference.cache
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\obj\Debug\PeminjamanBukuApp.Properties.Resources.resources
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\obj\Debug\PeminjamanBukuApp.csproj.GenerateResource.cache
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\obj\Debug\PeminjamanBukuApp.csproj.CoreCompileInputs.cache
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\obj\Debug\PeminjamanBukuApp.exe
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\obj\Debug\PeminjamanBukuApp.pdb
+D:\Semester 6\KPL\PeminjamanBukuApp\PeminjamanBukuApp\obj\Debug\PeminjamanBukuApp.Form1.resources
