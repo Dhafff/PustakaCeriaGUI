@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            button10 = new Button();
             button9 = new Button();
             button8 = new Button();
             button7 = new Button();
@@ -40,9 +41,10 @@
             button1 = new Button();
             label3 = new Label();
             label2 = new Label();
-            button10 = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
             SuspendLayout();
             // 
@@ -71,9 +73,21 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = SystemColors.HighlightText;
+            splitContainer1.Panel2.Controls.Add(label1);
             splitContainer1.Size = new Size(1046, 679);
             splitContainer1.SplitterDistance = 259;
             splitContainer1.TabIndex = 0;
+            // 
+            // button10
+            // 
+            button10.Font = new Font("SF Pro Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button10.ImageAlign = ContentAlignment.MiddleLeft;
+            button10.Location = new Point(33, 525);
+            button10.Name = "button10";
+            button10.Size = new Size(195, 37);
+            button10.TabIndex = 11;
+            button10.Text = "Pengaturan";
+            button10.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -199,16 +213,15 @@
             label2.TabIndex = 0;
             label2.Text = "Selamat datang,";
             // 
-            // button10
+            // label1
             // 
-            button10.Font = new Font("SF Pro Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.ImageAlign = ContentAlignment.MiddleLeft;
-            button10.Location = new Point(33, 525);
-            button10.Name = "button10";
-            button10.Size = new Size(195, 37);
-            button10.TabIndex = 11;
-            button10.Text = "Pengaturan";
-            button10.UseVisualStyleBackColor = true;
+            label1.AutoSize = true;
+            label1.Font = new Font("SF Pro Display", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(30, 26);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 21);
+            label1.TabIndex = 0;
+            label1.Text = "Dashboard";
             // 
             // MainForm
             // 
@@ -220,6 +233,8 @@
             Text = "Pustaka Ceria";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
+            splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             ResumeLayout(false);
@@ -240,5 +255,6 @@
         private Button button4;
         private Button button3;
         private Button button10;
+        private Label label1;
     }
 }
