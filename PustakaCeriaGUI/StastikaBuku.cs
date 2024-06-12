@@ -30,28 +30,40 @@ namespace PustakaCeriaGUI
 
         private void StatistikaBuku_Load(object sender, EventArgs e)
         {
-            // Isi data ke dalam DataGridView saat form dimuat
-            dataGridView1.Rows.Clear();
-            List<Buku> bukuList = new List<Buku>()
+            try
             {
-                new Buku { Id = "1", Judul = "Laskar Pelangi", Penulis = "Andrea Hirata", Genre = "Fiksi", JumlahPeminjaman = 5 },
-                new Buku { Id = "2", Judul = "Bumi Manusia", Penulis = "Pramoedya Ananta Toer", Genre = "Fiksi", JumlahPeminjaman = 6 },
-                new Buku { Id = "3", Judul = "Dilan 1990", Penulis = "Pidi Baiq", Genre = "Fiksi", JumlahPeminjaman = 10 },
-                new Buku { Id = "4", Judul = "Koala Kumal", Penulis = "Raditya Dika", Genre = "Fiksi", JumlahPeminjaman = 12 },
-                new Buku { Id = "5", Judul = "5 Cm", Penulis = "Dhonny Dhirgantoro", Genre = "Fiksi", JumlahPeminjaman = 20 },
-                new Buku { Id = "6", Judul = "Autobiografi Tan Malaka: Dari Penjara Ke Penjara", Penulis = "Tan Malaka", Genre = "Non-Fiksi", JumlahPeminjaman = 15 },
-                new Buku { Id = "7", Judul = "Atomic Habits", Penulis = "James Clear", Genre = "Non-Fiksi", JumlahPeminjaman = 10 },
-                new Buku { Id = "8", Judul = "Soekarno: Biografi Singkat 1901-1970", Penulis = "Taufik Adi Susilo", Genre = "Non-Fiksi", JumlahPeminjaman = 5 },
-                new Buku { Id = "9", Judul = "Rudy: Kisah Masa Muda Sang Visioner", Penulis = "Gina S. Noer", Genre = "Non-Fiksi", JumlahPeminjaman = 20 },
-                new Buku { Id = "10", Judul = "Autobiografi Mahatma Gandhi", Penulis = "Mahatma Gandhi", Genre = "Non-Fiksi", JumlahPeminjaman = 2 },
-            };
+                // Isi data ke dalam DataGridView saat form dimuat
+                dataGridView1.Rows.Clear();
 
-            foreach (var buku in bukuList)
+                // Buat daftar buku dengan data yang valid
+                List<Buku> bukuList = new List<Buku>()
+                {
+                     new Buku { Id = "1", Judul = "Laskar Pelangi", Penulis = "Andrea Hirata", Genre = "Fiksi", JumlahPeminjaman = 5 },
+                     new Buku { Id = "2", Judul = "Bumi Manusia", Penulis = "Pramoedya Ananta Toer", Genre = "Fiksi", JumlahPeminjaman = 6 },
+                     new Buku { Id = "3", Judul = "Dilan 1990", Penulis = "Pidi Baiq", Genre = "Fiksi", JumlahPeminjaman = 10 },
+                     new Buku { Id = "4", Judul = "Koala Kumal", Penulis = "Raditya Dika", Genre = "Fiksi", JumlahPeminjaman = 12 },
+                     new Buku { Id = "5", Judul = "5 Cm", Penulis = "Dhonny Dhirgantoro", Genre = "Fiksi", JumlahPeminjaman = 20 },
+                     new Buku { Id = "6", Judul = "Autobiografi Tan Malaka: Dari Penjara Ke Penjara", Penulis = "Tan Malaka", Genre = "Non-Fiksi", JumlahPeminjaman = 15 },
+                     new Buku { Id = "7", Judul = "Atomic Habits", Penulis = "James Clear", Genre = "Non-Fiksi", JumlahPeminjaman = 10 },
+                     new Buku { Id = "8", Judul = "Soekarno: Biografi Singkat 1901-1970", Penulis = "Taufik Adi Susilo", Genre = "Non-Fiksi", JumlahPeminjaman = 5 },
+                     new Buku { Id = "9", Judul = "Rudy: Kisah Masa Muda Sang Visioner", Penulis = "Gina S. Noer", Genre = "Non-Fiksi", JumlahPeminjaman = 20 },
+                     new Buku { Id = "10", Judul = "Autobiografi Mahatma Gandhi", Penulis = "Mahatma Gandhi", Genre = "Non-Fiksi", JumlahPeminjaman = 2 },
+                };
+
+                // Tambahkan data buku ke dalam DataGridView
+                foreach (var buku in bukuList)
+                {
+                    dataGridView1.Rows.Add(buku.Id, buku.Judul, buku.Penulis, buku.Genre, buku.JumlahPeminjaman);
+                }
+            }
+            catch (Exception ex)
             {
-                dataGridView1.Rows.Add(buku.Id, buku.Judul, buku.Penulis, buku.Genre, buku.JumlahPeminjaman);
+                // Tangani kesalahan dan tampilkan pesan kesalahan kepada pengguna
+                MessageBox.Show("Terjadi kesalahan saat memuat data buku: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        //Melakukan Input Judul
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string judulBuku = textBox1.Text.ToLower();
@@ -89,7 +101,7 @@ namespace PustakaCeriaGUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }    
 
 
