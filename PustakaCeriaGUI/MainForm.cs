@@ -19,18 +19,7 @@ namespace PustakaCeriaGUI
 
         private void button6_Click(object sender, EventArgs e)
         {
-            // Membuat instansiasi dari form StatistikaBuku
-            StastikaBuku statistikBukuForm = new StastikaBuku();
-            statistikBukuForm.TopLevel = false;
-            statistikBukuForm.FormBorderStyle = FormBorderStyle.None;
-            statistikBukuForm.Dock = DockStyle.Fill;
-
-            // Membersihkan kontrol sebelumnya di Panel2
-            splitContainer1.Panel2.Controls.Clear();
-
-            // Menambahkan form StatistikaBuku ke Panel2
-            splitContainer1.Panel2.Controls.Add(statistikBukuForm);
-            statistikBukuForm.Show();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
