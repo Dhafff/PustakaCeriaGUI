@@ -1,0 +1,12 @@
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\bin\Debug\net8.0\ManajemenBukuLibrary.deps.json
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\bin\Debug\net8.0\ManajemenBukuLibrary.dll
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\bin\Debug\net8.0\ManajemenBukuLibrary.pdb
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ManajemenBukuLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ManajemenBukuLibrary.AssemblyInfoInputs.cache
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ManajemenBukuLibrary.AssemblyInfo.cs
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ManajemenBukuLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ManajemenBukuLibrary.sourcelink.json
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ManajemenBukuLibrary.dll
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\refint\ManajemenBukuLibrary.dll
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ManajemenBukuLibrary.pdb
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\ManajemenBukuLibrary\obj\Debug\net8.0\ref\ManajemenBukuLibrary.dll

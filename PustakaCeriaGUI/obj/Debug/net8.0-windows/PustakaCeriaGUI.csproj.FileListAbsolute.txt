@@ -7,7 +7,6 @@ C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\bin\Debug\net8.0-win
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.csproj.AssemblyReference.cache
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.FormLogin.resources
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.FormRegister.resources
-C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.HomePage.resources
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.csproj.GenerateResource.cache
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.AssemblyInfoInputs.cache
@@ -19,3 +18,11 @@ C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-win
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.pdb
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.genruntimeconfig.cache
 C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\ref\PustakaCeriaGUI.dll
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.MainForm.resources
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.Properties.Resources.resources
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.sourcelink.json
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.FormEditBuku.resources
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.FormManajemenBuku.resources
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\obj\Debug\net8.0-windows\PustakaCeriaGUI.FormTambahBuku.resources
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\bin\Debug\net8.0-windows\ManajemenBukuLibrary.dll
+C:\Users\dhafg\source\repos\PustakaCeriaGUI\PustakaCeriaGUI\bin\Debug\net8.0-windows\ManajemenBukuLibrary.pdb

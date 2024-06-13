@@ -113,6 +113,7 @@
             button8.TabIndex = 9;
             button8.Text = "Notifikasi";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += buttonNotifikasi_Click;
             // 
             // button7
             // 
@@ -124,6 +125,7 @@
             button7.TabIndex = 8;
             button7.Text = "Manajemen anggota";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += buttonManajemenAnggota_Click;
             // 
             // button6
             // 
@@ -135,6 +137,7 @@
             button6.TabIndex = 7;
             button6.Text = "Statistik buku";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += buttonStatistikBuku_Click;
             // 
             // button5
             // 
@@ -146,6 +149,7 @@
             button5.TabIndex = 6;
             button5.Text = "Riwayat peminjaman";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += buttonRiwayatPeminjaman_Click;
             // 
             // button4
             // 
@@ -157,6 +161,7 @@
             button4.TabIndex = 5;
             button4.Text = "Manajemen buku";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += buttonManajemenBuku_Click;
             // 
             // button3
             // 
@@ -168,6 +173,7 @@
             button3.TabIndex = 4;
             button3.Text = "Pencarian buku";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += buttonPencarianBuku_Click;
             // 
             // button2
             // 
@@ -179,6 +185,7 @@
             button2.TabIndex = 3;
             button2.Text = "Peminjaman buku";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += buttonPeminjamanBuku_Click;
             // 
             // button1
             // 
@@ -190,6 +197,7 @@
             button1.TabIndex = 2;
             button1.Text = "Dashboard";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += buttonDashboard_Click;
             // 
             // label3
             // 

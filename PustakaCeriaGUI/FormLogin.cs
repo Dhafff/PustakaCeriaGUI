@@ -6,22 +6,27 @@ namespace PustakaCeriaGUI
 {
     public partial class FormLogin : Form
     {
-        public FormLogin()
+        private readonly UserValidatorFactory _userValidatorFactory;
+        private readonly IBookFactory bookFactory;
+        public FormLogin(UserValidatorFactory userValidatorFactory, IBookFactory bookFactory)
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
+            _userValidatorFactory = userValidatorFactory;
+            this.bookFactory = bookFactory;
         }
 
-        private void buttonMasuk_Click(object sender, EventArgs e) 
-        { 
+        private void buttonMasuk_Click(object sender, EventArgs e)
+        {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            var userValidator = _userValidatorFactory.CreateUserValidator();
 
-            if (ValidateLogin(username, password))
+            if (userValidator.Validate(username, password))
             {
                 MessageBox.Show("Berhasil Masuk!");
                 this.Hide();
-                MainForm homePage = new MainForm();
+                MainForm homePage = new MainForm(_userValidatorFactory, bookFactory);
                 homePage.Show();
             }
             else
@@ -30,15 +35,34 @@ namespace PustakaCeriaGUI
             }
         }
 
-        private void buttonDaftar_Click(object sender, EventArgs e) 
+        private void buttonDaftar_Click(object sender, EventArgs e)
         {
-            FormRegister register = new FormRegister();
+            UserRegistrationFactory userRegistrationFactory = new JsonUserRegistrationFactory();
+            FormRegister register = new FormRegister(userRegistrationFactory);
             this.Hide();
             register.ShowDialog();
             this.Show();
         }
 
-        private bool ValidateLogin(string username, string password)
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    public interface UserValidator
+    {
+        bool Validate(string username, string password);
+    }
+
+    public interface UserValidatorFactory
+    {
+        UserValidator CreateUserValidator();
+    }
+
+    public class JsonUserValidator : UserValidator
+    {
+        public bool Validate(string username, string password)
         {
             if (File.Exists("users.json"))
             {
@@ -66,6 +90,14 @@ namespace PustakaCeriaGUI
 
                 return enteredPasswordHashString == storedHashedPassword;
             }
+        }
+    }
+
+    public class JsonUserValidatorFactory : UserValidatorFactory
+    {
+        public UserValidator CreateUserValidator()
+        {
+            return new JsonUserValidator();
         }
     }
 }

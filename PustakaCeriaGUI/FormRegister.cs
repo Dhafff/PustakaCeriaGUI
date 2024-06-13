@@ -15,10 +15,13 @@ namespace PustakaCeriaGUI
 {
     public partial class FormRegister : Form
     {
-        public FormRegister()
+        private readonly UserRegistrationFactory _userRegistrationFactory;
+
+        public FormRegister(UserRegistrationFactory userRegistrationFactory)
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
+            _userRegistrationFactory = userRegistrationFactory;
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
@@ -31,10 +34,11 @@ namespace PustakaCeriaGUI
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            string validationMessage = ValidateRegistration(username, password);
+            var userRegistration = _userRegistrationFactory.CreateUserRegistration();
+            string validationMessage = userRegistration.ValidateRegistration(username, password);
             if (string.IsNullOrEmpty(validationMessage))
             {
-                RegisterUser(username, password);
+                userRegistration.RegisterUser(username, password);
                 MessageBox.Show("Registrasi berhasil!");
                 this.Close();
             }
@@ -48,8 +52,22 @@ namespace PustakaCeriaGUI
         {
             this.Close();
         }
+    }
 
-        private string ValidateRegistration(string username, string password)
+    public interface UserRegistration
+    {
+        string ValidateRegistration(string username, string password);
+        void RegisterUser(string username, string password);
+    }
+
+    public interface UserRegistrationFactory
+    {
+        UserRegistration CreateUserRegistration();
+    }
+
+    public class JsonUserRegistration : UserRegistration
+    {
+        public string ValidateRegistration(string username, string password)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
                 return "Username dan password tidak boleh kosong.";
@@ -69,20 +87,15 @@ namespace PustakaCeriaGUI
             return null;
         }
 
-        private bool IsAscii(string value)
-        {
-            return Encoding.UTF8.GetByteCount(value) == value.Length;
-        }
-
-        private void RegisterUser(string username, string password)
+        public void RegisterUser(string username, string password)
         {
             string hashedPassword = HashPassword(password);
 
             var newUser = new JObject
-            {
-                { "username", username },
-                { "password", hashedPassword }
-            };
+        {
+            { "username", username },
+            { "password", hashedPassword }
+        };
 
             JArray users;
             if (File.Exists("users.json"))
@@ -99,6 +112,11 @@ namespace PustakaCeriaGUI
             File.WriteAllText("users.json", users.ToString());
         }
 
+        private bool IsAscii(string value)
+        {
+            return Encoding.UTF8.GetByteCount(value) == value.Length;
+        }
+
         private string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())
@@ -107,6 +125,14 @@ namespace PustakaCeriaGUI
                 var passwordHash = sha256.ComputeHash(passwordBytes);
                 return Convert.ToBase64String(passwordHash);
             }
+        }
+    }
+
+    public class JsonUserRegistrationFactory : UserRegistrationFactory
+    {
+        public UserRegistration CreateUserRegistration()
+        {
+            return new JsonUserRegistration();
         }
     }
 }

@@ -8,10 +8,13 @@ namespace PustakaCeriaGUI
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new FormLogin());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            UserValidatorFactory userValidatorFactory = new JsonUserValidatorFactory();
+            IBookFactory bookFactory = new BookFactory();
+
+            Application.Run(new FormLogin(userValidatorFactory, bookFactory));
         }
     }
 }
